@@ -1,3 +1,8 @@
+/*
+    ColorMotd
+    Author: ShrBox
+    License: MIT License
+*/
 let Interval = 5000;
 let Motd = ["§aWelcome to our server", "§cPowered by LiteLoaderBDS", "§6That's cool!"];
 let CurrentMotd = 0;
@@ -31,10 +36,11 @@ function SwitchMotd() {
 }
 
 function InitPlugin() {
+    ll.registerPlugin("ColorMotd", "Timing change MOTD plugin", [1, 0, 0], { "Author": "ShrBox", "License": "MIT License", "Repository": "https://github.com/ShrBox/ColorMotd" })
     InitConfig();
-    mc.listen("onServerStarted", function() {
+    mc.listen("onServerStarted", function () {
         SwitchMotd();
         setInterval(SwitchMotd, Interval);
     });
-    log("Loaded! interval: ", Interval, " motd: ", Motd);
+    log("Loaded!");
 }
