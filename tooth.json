@@ -1,0 +1,26 @@
+{
+    "format_version": 1,
+    "tooth": "github.com/ShrBox/ColorMotd",
+    "version": "1.0.0",
+    "dependencies": {
+        "github.com/Tooth-Hub/LiteLoaderBDS": [
+            [
+                ">=2.9.0"
+            ]
+        ]
+    },
+    "information": {
+        "name": "ColorMotd",
+        "description": "Timing change MOTD plugin for LLSE",
+        "author": "ShrBox",
+        "license": "MIT License",
+        "homepage": "https://github.com/ShrBox/ColorMotd"
+    },
+    "placement": [
+        {
+            "source": "ColorMotd.js",
+            "destination": "plugins/ColorMotd.js"
+        }
+    ],
+    "possession": []
+}
